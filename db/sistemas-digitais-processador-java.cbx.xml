@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="sistemas-digitais-processador-java">
+		<CBX_INST_ENTRY INSTANCE_NAME="|single_port_ram|altsyncram:ram_rtl_0" CBX_FILE_NAME="altsyncram_1b41.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
