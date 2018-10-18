@@ -16,7 +16,7 @@ entity signed_adder_subtractor is
 	(
 		a		: in signed ((DATA_WIDTH-1) downto 0);
 		b		: in signed ((DATA_WIDTH-1) downto 0);
-		add_sub : in std_logic;
+		operacao : in signed (4 downto 0);
 		result	: out signed ((DATA_WIDTH-1) downto 0)
 	);
 
@@ -29,9 +29,9 @@ begin
 	begin
 		-- Add if "add_sub" is 1, else subtract
 		if (add_sub = '1') then
-			result <= a + b;
+			result <= unsigned(a) + unsigned(b);
 		else
-			result <= a - b;
+			result <= unsigned(a) - (b);
 		end if;
 	end process;
 
