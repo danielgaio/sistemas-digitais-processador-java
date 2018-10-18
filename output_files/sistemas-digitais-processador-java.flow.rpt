@@ -1,5 +1,5 @@
 Flow report for sistemas-digitais-processador-java
-Wed Oct 17 21:01:51 2018
+Wed Oct 17 21:48:20 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,22 +40,22 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Wed Oct 17 21:01:51 2018      ;
+; Flow Status                        ; Flow Failed - Wed Oct 17 21:48:20 2018     ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; sistemas-digitais-processador-java         ;
-; Top-level Entity Name              ; single_port_ram                            ;
+; Top-level Entity Name              ; basic_shift_register                       ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C25F324C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 0 / 24,624 ( 0 % )                         ;
-;     Total combinational functions  ; 0 / 24,624 ( 0 % )                         ;
-;     Dedicated logic registers      ; 0 / 24,624 ( 0 % )                         ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 24 / 216 ( 11 % )                          ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 512 / 608,256 ( < 1 % )                    ;
-; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                            ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
+; Total logic elements               ; N/A until Partition Merge                  ;
+;     Total combinational functions  ; N/A until Partition Merge                  ;
+;     Dedicated logic registers      ; N/A until Partition Merge                  ;
+; Total registers                    ; N/A until Partition Merge                  ;
+; Total pins                         ; N/A until Partition Merge                  ;
+; Total virtual pins                 ; N/A until Partition Merge                  ;
+; Total memory bits                  ; N/A until Partition Merge                  ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
+; Total PLLs                         ; N/A until Partition Merge                  ;
 +------------------------------------+--------------------------------------------+
 
 
@@ -64,66 +64,54 @@ applicable agreement for further details.
 +-------------------+------------------------------------+
 ; Option            ; Setting                            ;
 +-------------------+------------------------------------+
-; Start date & time ; 10/17/2018 21:01:15                ;
+; Start date & time ; 10/17/2018 21:48:19                ;
 ; Main task         ; Compilation                        ;
 ; Revision Name     ; sistemas-digitais-processador-java ;
 +-------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                              ;
-+-------------------------------------+---------------------------------+------------------------------------+-----------------+----------------+
-; Assignment Name                     ; Value                           ; Default Value                      ; Entity Name     ; Section Id     ;
-+-------------------------------------+---------------------------------+------------------------------------+-----------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 200359787311493.153982087405828 ; --                                 ; --              ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --                                 ; --              ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>                             ; --              ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --                                 ; --              ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --                                 ; --              ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                            ; --                                 ; --              ; --             ;
-; PARTITION_COLOR                     ; 16764057                        ; --                                 ; single_port_ram ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --                                 ; single_port_ram ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --                                 ; single_port_ram ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --                                 ; --              ; --             ;
-; TOP_LEVEL_ENTITY                    ; single_port_ram                 ; sistemas-digitais-processador-java ; --              ; --             ;
-+-------------------------------------+---------------------------------+------------------------------------+-----------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                   ;
++-------------------------------------+---------------------------------+------------------------------------+----------------------+----------------+
+; Assignment Name                     ; Value                           ; Default Value                      ; Entity Name          ; Section Id     ;
++-------------------------------------+---------------------------------+------------------------------------+----------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 200359787311493.153982369906148 ; --                                 ; --                   ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --                                 ; --                   ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>                             ; --                   ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --                                 ; --                   ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --                                 ; --                   ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                            ; --                                 ; --                   ; --             ;
+; PARTITION_COLOR                     ; 16764057                        ; --                                 ; basic_shift_register ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --                                 ; basic_shift_register ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --                                 ; basic_shift_register ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --                                 ; --                   ; --             ;
+; TOP_LEVEL_ENTITY                    ; basic_shift_register            ; sistemas-digitais-processador-java ; --                   ; --             ;
++-------------------------------------+---------------------------------+------------------------------------+----------------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 485 MB              ; 00:00:02                           ;
-; Fitter                    ; 00:00:14     ; 1.0                     ; 675 MB              ; 00:00:08                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 400 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 443 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 373 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:15                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 464 MB              ; 00:00:01                           ;
+; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; User-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter                    ; User-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler                 ; User-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; User-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; User-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; User-PC          ; Windows 7 ; 6.1        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off sistemas-digitais-processador-java -c sistemas-digitais-processador-java
-quartus_fit --read_settings_files=off --write_settings_files=off sistemas-digitais-processador-java -c sistemas-digitais-processador-java
-quartus_asm --read_settings_files=off --write_settings_files=off sistemas-digitais-processador-java -c sistemas-digitais-processador-java
-quartus_sta sistemas-digitais-processador-java -c sistemas-digitais-processador-java
-quartus_eda --read_settings_files=off --write_settings_files=off sistemas-digitais-processador-java -c sistemas-digitais-processador-java
 
 
 
